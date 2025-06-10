@@ -1,0 +1,409 @@
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-04T20:06:56.728Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-04T20:06:58.546Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-04T20:06:58.557Z"}
+{"code":"EAUTH","command":"API","level":"error","message":"Nodemailer configuration error: Missing credentials for \"PLAIN\"","stack":"Error: Missing credentials for \"PLAIN\"\n    at SMTPConnection._formatError (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:809:19)\n    at SMTPConnection.login (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:454:38)\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-transport\\index.js:375:32\n    at SMTPConnection.<anonymous> (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:215:17)\n    at Object.onceWrapper (node:events:632:28)\n    at SMTPConnection.emit (node:events:518:28)\n    at SMTPConnection.emit (node:domain:488:12)\n    at SMTPConnection._actionEHLO (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:1371:14)\n    at SMTPConnection._processResponse (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:993:20)\n    at SMTPConnection._onData (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:774:14)","timestamp":"2025-06-04T20:06:59.412Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-04T20:18:27.314Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-04T20:18:29.066Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-04T20:18:29.074Z"}
+{"code":"EAUTH","command":"API","level":"error","message":"Nodemailer configuration error: Missing credentials for \"PLAIN\"","stack":"Error: Missing credentials for \"PLAIN\"\n    at SMTPConnection._formatError (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:809:19)\n    at SMTPConnection.login (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:454:38)\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-transport\\index.js:375:32\n    at SMTPConnection.<anonymous> (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:215:17)\n    at Object.onceWrapper (node:events:632:28)\n    at SMTPConnection.emit (node:events:518:28)\n    at SMTPConnection.emit (node:domain:488:12)\n    at SMTPConnection._actionEHLO (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:1371:14)\n    at SMTPConnection._processResponse (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:993:20)\n    at SMTPConnection._onData (C:\\pharmaChain\\pharmachain-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:774:14)","timestamp":"2025-06-04T20:18:29.591Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-04T20:20:19.102Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-04T20:20:21.928Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-04T20:20:21.961Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-04T20:20:21.969Z"}
+{"level":"error","message":"Register error: User validation failed: role: `` is not a valid enum value for path `role`.","timestamp":"2025-06-04T20:23:14.951Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-04T20:26:17.517Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-04T20:26:18.778Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-04T20:26:18.785Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-04T20:26:19.867Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-04T20:31:09.323Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-04T20:31:11.781Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-04T20:31:11.791Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-04T20:31:13.215Z"}
+{"level":"info","message":"User registered: vivekg3216@gmail.com","timestamp":"2025-06-04T20:31:20.070Z"}
+{"level":"info","message":"OTP verified for user: +917506734599","timestamp":"2025-06-04T20:31:33.015Z"}
+{"level":"info","message":"Role selected for user 6840ad187d2fbe689f13093f: manufacturer","timestamp":"2025-06-04T20:31:37.606Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-04T20:37:26.630Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-04T20:37:28.322Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-04T20:37:28.326Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-04T20:37:29.068Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-04T20:42:42.456Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-04T20:42:43.768Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-04T20:42:43.773Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-04T20:42:47.246Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-04T20:43:01.134Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-04T20:43:02.040Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-04T20:43:02.046Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-04T20:43:03.174Z"}
+{"level":"info","message":"Documents uploaded for user 6840ad187d2fbe689f13093f","timestamp":"2025-06-04T20:43:12.142Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T10:00:25.778Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T10:00:27.821Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T10:00:27.829Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T10:00:28.911Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T10:03:22.290Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T10:03:24.028Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T10:03:24.036Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T10:03:24.921Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T10:04:32.182Z"}
+{"level":"error","message":"Authentication error: Cannot set properties of undefined (setting 'adminId')","stack":"TypeError: Cannot set properties of undefined (setting 'adminId')\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:15:21\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateAdmin (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:5:107)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\index.js:435:11)","timestamp":"2025-06-05T10:19:15.316Z"}
+{"level":"error","message":"Authentication error: Cannot set properties of undefined (setting 'adminId')","stack":"TypeError: Cannot set properties of undefined (setting 'adminId')\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:15:21\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateAdmin (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:5:107)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\index.js:435:11)","timestamp":"2025-06-05T10:19:15.337Z"}
+{"level":"info","message":"Admin logged in: admin@example.com","timestamp":"2025-06-05T10:20:06.302Z"}
+{"level":"error","message":"Authentication error: Cannot set properties of undefined (setting 'adminId')","stack":"TypeError: Cannot set properties of undefined (setting 'adminId')\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:15:21\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateAdmin (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:5:107)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\index.js:435:11)","timestamp":"2025-06-05T10:20:06.396Z"}
+{"level":"error","message":"Authentication error: Cannot set properties of undefined (setting 'adminId')","stack":"TypeError: Cannot set properties of undefined (setting 'adminId')\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:15:21\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateAdmin (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:5:107)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\index.js:435:11)","timestamp":"2025-06-05T10:20:06.407Z"}
+{"level":"info","message":"Admin logged in: admin@example.com","timestamp":"2025-06-05T10:20:29.340Z"}
+{"level":"error","message":"Authentication error: Cannot set properties of undefined (setting 'adminId')","stack":"TypeError: Cannot set properties of undefined (setting 'adminId')\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:15:21\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateAdmin (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:5:107)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\index.js:435:11)","timestamp":"2025-06-05T10:20:29.419Z"}
+{"level":"error","message":"Authentication error: Cannot set properties of undefined (setting 'adminId')","stack":"TypeError: Cannot set properties of undefined (setting 'adminId')\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:15:21\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateAdmin (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:5:107)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\index.js:435:11)","timestamp":"2025-06-05T10:20:29.431Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T10:38:01.471Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T10:38:04.051Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T10:38:04.060Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T10:38:04.710Z"}
+{"level":"info","message":"Admin logged in: admin@example.com","timestamp":"2025-06-05T10:38:33.719Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T10:38:33.895Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T10:38:33.903Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T10:47:21.826Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T10:47:24.663Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T10:47:24.671Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T10:47:25.162Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T10:47:29.784Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T10:47:29.816Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T10:49:17.510Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T10:49:18.875Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T10:49:18.880Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T10:49:20.615Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T10:51:29.518Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T10:51:31.316Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T10:51:31.325Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T10:51:32.152Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T10:51:36.452Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T10:51:36.489Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T10:58:03.237Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T10:58:03.269Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:01:59.524Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:02:43.892Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:02:43.922Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:04:31.223Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:04:31.232Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:04:36.304Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:04:36.309Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:04:40.718Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:04:40.747Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:06:58.232Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T11:11:41.413Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:11:43.139Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T11:11:43.156Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T11:11:44.430Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:14:38.582Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T11:22:46.111Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:22:47.412Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T11:22:47.417Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T11:22:48.011Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T11:23:08.823Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:23:09.563Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T11:23:09.566Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T11:23:11.877Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:24:00.223Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T11:24:49.982Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:24:51.090Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T11:24:51.096Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T11:24:52.992Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T11:25:05.631Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:25:06.704Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T11:25:06.709Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T11:25:07.824Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:25:30.837Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T11:25:59.071Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:26:00.644Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T11:26:00.649Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T11:26:01.403Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:26:08.556Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T11:27:08.630Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:27:09.901Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T11:27:09.910Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T11:27:10.990Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:27:13.513Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T11:28:40.464Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:28:41.562Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T11:28:41.567Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T11:28:42.717Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:28:46.509Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:29:24.286Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:29:24.317Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T11:30:02.291Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:30:03.364Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T11:30:03.369Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T11:30:05.274Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:30:09.511Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:30:09.537Z"}
+{"level":"info","message":"Admin logged in: admin@example.com","timestamp":"2025-06-05T11:33:36.762Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:33:36.838Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:33:36.861Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T11:43:31.868Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T11:43:33.097Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T11:43:33.103Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T11:43:34.205Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:13.815Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:13.860Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:17.034Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:17.055Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:17.784Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:17.804Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:18.476Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:18.504Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:19.072Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:19.095Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:19.617Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:19.639Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:40.224Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:45:40.246Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:46:03.028Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:46:03.052Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:52:14.653Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:52:14.671Z"}
+{"level":"info","message":"User registered: vivekgup71@gmail.com","timestamp":"2025-06-05T11:52:41.493Z"}
+{"level":"info","message":"OTP verified for user: +917506734599","timestamp":"2025-06-05T11:52:52.218Z"}
+{"level":"info","message":"Role selected for user 6841850936fcfa6856b1e0b2: manufacturer","timestamp":"2025-06-05T11:52:55.051Z"}
+{"level":"info","message":"Documents uploaded for user 6841850936fcfa6856b1e0b2","timestamp":"2025-06-05T11:53:44.974Z"}
+{"level":"info","message":"Admin logged in: admin@example.com","timestamp":"2025-06-05T11:54:40.195Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:54:40.270Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:54:40.291Z"}
+{"level":"info","message":"Confirmation email sent to: vivekgup71@gmail.com","timestamp":"2025-06-05T11:55:48.566Z"}
+{"level":"info","message":"User 6841850936fcfa6856b1e0b2 status updated to: approved by admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T11:55:48.567Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T12:42:08.499Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T12:42:11.052Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T12:42:11.088Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T12:42:12.077Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T12:44:13.420Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T12:44:15.572Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T12:44:15.588Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T12:44:17.012Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T12:44:58.086Z"}
+{"level":"info","message":"Fetched user list for admin 68416bb09b2c5cc3b89f2de5","timestamp":"2025-06-05T12:44:58.117Z"}
+{"level":"info","message":"User logged in: +917506734599","timestamp":"2025-06-05T12:45:16.886Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T17:13:44.794Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T17:13:48.668Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T17:13:50.958Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T17:13:50.965Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T17:20:00.154Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T17:20:03.232Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T17:20:03.241Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T17:20:04.451Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T17:22:05.911Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T17:22:07.939Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T17:22:07.945Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T17:22:10.678Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T17:59:15.341Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T17:59:18.682Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T17:59:18.716Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T17:59:19.371Z"}
+{"level":"info","message":"User logged in: +917506734599","timestamp":"2025-06-05T18:01:33.778Z"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","message":"Add product error: The \"data\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined","stack":"TypeError: The \"data\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined\n    at Object.writeFile (node:internal/fs/promises:1045:5)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\controllers\\userController.ts:85:25\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\pharmaChain\\pharmachain-backend\\src\\controllers\\userController.ts:38:58)","timestamp":"2025-06-05T18:05:26.491Z"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","message":"Add product error: The \"data\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined","stack":"TypeError: The \"data\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined\n    at Object.writeFile (node:internal/fs/promises:1045:5)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\controllers\\userController.ts:85:25\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\pharmaChain\\pharmachain-backend\\src\\controllers\\userController.ts:38:58)","timestamp":"2025-06-05T18:05:58.277Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-05T18:17:14.339Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-05T18:17:17.772Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-05T18:17:17.785Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-05T18:17:18.876Z"}
+{"level":"info","message":"Product added by user 6841850936fcfa6856b1e0b2: Paracetamol-1","timestamp":"2025-06-05T18:18:36.629Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-06T09:13:28.846Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-06T09:13:33.943Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-06T09:13:33.949Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-06T09:13:34.703Z"}
+{"level":"info","message":"User logged in: +917506734599","timestamp":"2025-06-06T09:13:58.447Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-06T10:33:51.084Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-06T10:33:55.907Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-06T10:33:55.916Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-06T10:33:57.007Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-06T10:42:32.480Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-06T10:42:36.611Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-06T10:42:36.625Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-06T10:42:38.579Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-06T10:43:04.454Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-06T10:43:08.479Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-06T10:43:08.484Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-06T10:43:09.542Z"}
+{"expiredAt":"2025-06-06T10:13:58.000Z","level":"error","message":"User authentication error: jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:190:21\n    at getSecret (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:24:25\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateUser (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:16:110)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)","timestamp":"2025-06-06T10:43:43.783Z"}
+{"expiredAt":"2025-06-06T10:13:58.000Z","level":"error","message":"User authentication error: jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:190:21\n    at getSecret (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:24:25\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateUser (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:16:110)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)","timestamp":"2025-06-06T10:43:43.798Z"}
+{"expiredAt":"2025-06-06T10:13:58.000Z","level":"error","message":"User authentication error: jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:190:21\n    at getSecret (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:24:25\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateUser (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:16:110)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)","timestamp":"2025-06-06T10:53:47.351Z"}
+{"expiredAt":"2025-06-06T10:13:58.000Z","level":"error","message":"User authentication error: jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:190:21\n    at getSecret (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:24:25\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateUser (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:16:110)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)","timestamp":"2025-06-06T10:53:47.365Z"}
+{"expiredAt":"2025-06-06T10:13:58.000Z","level":"error","message":"User authentication error: jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:190:21\n    at getSecret (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:24:25\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateUser (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:16:110)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)","timestamp":"2025-06-06T10:53:52.523Z"}
+{"expiredAt":"2025-06-06T10:13:58.000Z","level":"error","message":"User authentication error: jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:190:21\n    at getSecret (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:24:25\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateUser (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:16:110)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)","timestamp":"2025-06-06T10:53:52.536Z"}
+{"expiredAt":"2025-06-06T10:13:58.000Z","level":"error","message":"User authentication error: jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:190:21\n    at getSecret (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:24:25\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateUser (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:16:110)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)","timestamp":"2025-06-06T10:53:57.112Z"}
+{"expiredAt":"2025-06-06T10:13:58.000Z","level":"error","message":"User authentication error: jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:190:21\n    at getSecret (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at Object.module.exports [as verify] (C:\\pharmaChain\\pharmachain-backend\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:24:25\n    at Generator.next (<anonymous>)\n    at C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:4:12)\n    at authenticateUser (C:\\pharmaChain\\pharmachain-backend\\src\\middleware\\auth.ts:16:110)\n    at Layer.handleRequest (C:\\pharmaChain\\pharmachain-backend\\node_modules\\router\\lib\\layer.js:152:17)","timestamp":"2025-06-06T10:53:57.127Z"}
+{"level":"info","message":"User logged in: +917506734599","timestamp":"2025-06-06T10:54:17.518Z"}
+{"level":"info","message":"Firebase Admin initialized","timestamp":"2025-06-06T11:31:57.644Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T13:56:27.990Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T13:56:28.006Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T13:56:28.247Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T13:57:44.291Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T13:57:44.303Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T13:57:45.242Z"}
+{"address":"127.0.0.1","code":"ESOCKET","command":"CONN","errno":-4078,"level":"error","message":"Send OTP error: connect ECONNREFUSED 127.0.0.1:587","port":587,"stack":"Error: connect ECONNREFUSED 127.0.0.1:587\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16)","syscall":"connect","timestamp":"2025-06-07T13:59:46.073Z"}
+{"address":"127.0.0.1","code":"ESOCKET","command":"CONN","errno":-4078,"level":"error","message":"Send OTP error: connect ECONNREFUSED 127.0.0.1:587","port":587,"stack":"Error: connect ECONNREFUSED 127.0.0.1:587\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16)","syscall":"connect","timestamp":"2025-06-07T13:59:50.206Z"}
+{"address":"127.0.0.1","code":"ESOCKET","command":"CONN","errno":-4078,"level":"error","message":"Send OTP error: connect ECONNREFUSED 127.0.0.1:587","port":587,"stack":"Error: connect ECONNREFUSED 127.0.0.1:587\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16)","syscall":"connect","timestamp":"2025-06-07T13:59:54.295Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T14:05:18.507Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T14:05:18.524Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T14:05:19.614Z"}
+{"address":"127.0.0.1","code":"ESOCKET","command":"CONN","errno":-4078,"level":"error","message":"Send OTP error: connect ECONNREFUSED 127.0.0.1:587","port":587,"stack":"Error: connect ECONNREFUSED 127.0.0.1:587\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16)","syscall":"connect","timestamp":"2025-06-07T14:05:28.444Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T14:24:22.976Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T14:24:22.989Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T14:24:24.068Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for signup","timestamp":"2025-06-07T14:25:27.094Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for signup","timestamp":"2025-06-07T14:25:29.680Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for signup","timestamp":"2025-06-07T14:34:40.102Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for signup","timestamp":"2025-06-07T14:41:54.593Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for signup","timestamp":"2025-06-07T14:54:14.825Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for signup","timestamp":"2025-06-07T14:59:58.561Z"}
+{"_message":"User validation failed","errors":{"role":{"kind":"required","message":"Path `role` is required.","name":"ValidatorError","path":"role","properties":{"message":"Path `role` is required.","path":"role","type":"required"}}},"level":"error","message":"Register error: User validation failed: role: Path `role` is required.","stack":"ValidationError: User validation failed: role: Path `role` is required.\n    at model.Document.invalidate (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\document.js:3343:32)\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\document.js:3104:17\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\schemaType.js:1407:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2025-06-07T15:00:26.005Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T15:08:52.529Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T15:08:52.537Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T15:08:54.298Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T15:08:54.324Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T15:09:48.365Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T15:09:48.373Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T15:09:49.624Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T15:09:50.275Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for signup","timestamp":"2025-06-07T15:12:07.730Z"}
+{"_message":"User validation failed","errors":{"role":{"kind":"required","message":"Path `role` is required.","name":"ValidatorError","path":"role","properties":{"message":"Path `role` is required.","path":"role","type":"required"}}},"level":"error","message":"Register error: User validation failed: role: Path `role` is required.","stack":"ValidationError: User validation failed: role: Path `role` is required.\n    at model.Document.invalidate (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\document.js:3343:32)\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\document.js:3104:17\n    at C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\schemaType.js:1407:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2025-06-07T15:12:26.235Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T15:16:48.845Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T15:16:48.851Z"}
+{"level":"info","message":"User registered: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T15:16:49.532Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T15:16:49.665Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T15:16:50.375Z"}
+{"level":"info","message":"OTP sent to smitagupta8904@gmail.com for signup","timestamp":"2025-06-07T15:24:05.994Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for signup","timestamp":"2025-06-07T15:28:16.415Z"}
+{"level":"info","message":"User registered: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T15:28:33.191Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for signup","timestamp":"2025-06-07T15:35:46.970Z"}
+{"level":"info","message":"User registered: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T15:36:02.724Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T15:40:37.076Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T15:40:37.084Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T15:40:38.185Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T15:40:38.960Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T15:41:00.117Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T15:41:00.123Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T15:41:01.059Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T15:41:01.060Z"}
+{"level":"info","message":"Role selected for user 68445c6208224673be9a33a1: wholesaler","timestamp":"2025-06-07T15:41:07.496Z"}
+{"level":"info","message":"Documents uploaded for user 68445c6208224673be9a33a1","timestamp":"2025-06-07T15:42:28.347Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T15:43:31.277Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T15:43:31.281Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T15:43:32.313Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T15:43:32.320Z"}
+{"level":"info","message":"Admin logged in: admin@example.com","timestamp":"2025-06-07T15:43:41.056Z"}
+{"level":"info","message":"Fetched user list for admin undefined","timestamp":"2025-06-07T15:43:41.183Z"}
+{"level":"info","message":"Fetched user list for admin undefined","timestamp":"2025-06-07T15:43:41.207Z"}
+{"level":"info","message":"Confirmation email sent to: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T15:43:55.515Z"}
+{"level":"info","message":"User 68445c6208224673be9a33a1 status updated to: approved by admin undefined","timestamp":"2025-06-07T15:43:55.516Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for password_reset","timestamp":"2025-06-07T15:46:09.483Z"}
+{"level":"info","message":"Fetched user list for admin undefined","timestamp":"2025-06-07T16:01:16.453Z"}
+{"level":"info","message":"Fetched user list for admin undefined","timestamp":"2025-06-07T16:01:16.480Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for password_reset","timestamp":"2025-06-07T16:18:25.396Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:04:33.390Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:04:33.409Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:04:34.067Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:04:34.073Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for password_reset","timestamp":"2025-06-07T17:07:37.387Z"}
+{"level":"info","message":"Password reset for user: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T17:08:35.657Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:12:26.734Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:12:26.745Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:12:28.600Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:12:28.612Z"}
+{"level":"info","message":"User found: 1032230555@tcetmumbai.in, status: approved","timestamp":"2025-06-07T17:12:33.704Z"}
+{"level":"info","message":"Login failed: Password mismatch for phone +918291586999","timestamp":"2025-06-07T17:12:33.864Z"}
+{"level":"info","message":"User found: 1032230555@tcetmumbai.in, status: approved","timestamp":"2025-06-07T17:12:49.606Z"}
+{"level":"info","message":"Login failed: Password mismatch for phone +918291586999","timestamp":"2025-06-07T17:12:49.749Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for password_reset","timestamp":"2025-06-07T17:15:36.353Z"}
+{"level":"info","message":"Password reset for user: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T17:16:10.354Z"}
+{"level":"info","message":"User found: 1032230555@tcetmumbai.in, status: approved","timestamp":"2025-06-07T17:16:25.088Z"}
+{"level":"info","message":"Login failed: Password mismatch for phone +918291586999","timestamp":"2025-06-07T17:16:25.230Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for signup","timestamp":"2025-06-07T17:18:00.362Z"}
+{"level":"info","message":"User registered: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T17:18:18.703Z"}
+{"level":"info","message":"Role selected for user 6844745a904d02cdf7534c34: wholesaler","timestamp":"2025-06-07T17:18:21.759Z"}
+{"level":"info","message":"Documents uploaded for user 6844745a904d02cdf7534c34","timestamp":"2025-06-07T17:19:19.444Z"}
+{"level":"info","message":"Admin logged in: admin@example.com","timestamp":"2025-06-07T17:19:54.903Z"}
+{"level":"info","message":"Fetched user list for admin undefined","timestamp":"2025-06-07T17:19:55.043Z"}
+{"level":"info","message":"Fetched user list for admin undefined","timestamp":"2025-06-07T17:19:55.075Z"}
+{"level":"info","message":"Confirmation email sent to: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T17:20:01.783Z"}
+{"level":"info","message":"User 6844745a904d02cdf7534c34 status updated to: approved by admin undefined","timestamp":"2025-06-07T17:20:01.784Z"}
+{"level":"info","message":"Login failed: No user found with phone +918291586999","timestamp":"2025-06-07T17:20:36.366Z"}
+{"level":"info","message":"User found: 1032230555@tcetmumbai.in, status: approved","timestamp":"2025-06-07T17:20:44.112Z"}
+{"level":"info","message":"Login failed: Password mismatch for phone 8291586999","timestamp":"2025-06-07T17:20:44.254Z"}
+{"level":"info","message":"Login failed: No user found with phone +918291586999","timestamp":"2025-06-07T17:24:04.611Z"}
+{"level":"info","message":"User found: vivekgup71@gmail.com, status: approved","timestamp":"2025-06-07T17:24:22.048Z"}
+{"level":"info","message":"User logged in: +917506734599","timestamp":"2025-06-07T17:24:22.201Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:27:22.903Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:27:22.918Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:27:23.227Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:27:23.926Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:27:57.727Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:27:57.739Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:27:58.051Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:27:58.052Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:28:35.624Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:28:35.635Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:28:36.663Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:28:36.668Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:28:51.990Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:28:52.004Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:28:52.308Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:28:52.544Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:29:53.489Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:29:53.499Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:30:23.947Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:30:24.698Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for password_reset","timestamp":"2025-06-07T17:30:41.246Z"}
+{"level":"info","message":"Password reset for user: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T17:31:31.605Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:32:30.879Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:32:30.888Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:32:31.817Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:32:31.827Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:37:54.325Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:37:54.335Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:38:24.260Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:38:24.263Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:38:49.647Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:38:49.656Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:38:50.771Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:38:51.905Z"}
+{"level":"info","message":"User found: 1032230555@tcetmumbai.in, status: approved","timestamp":"2025-06-07T17:39:20.858Z"}
+{"level":"info","message":"Login failed: Password mismatch for phone 8291586999","timestamp":"2025-06-07T17:39:21.027Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for password_reset","timestamp":"2025-06-07T17:39:43.680Z"}
+{"level":"info","message":"New password hash for 1032230555@tcetmumbai.in: $2b$10$Kas2klNbq5g/4vszKPdhGuXDctA5BSwoDWljKYRpnMsDe/9teBOlq","timestamp":"2025-06-07T17:40:29.640Z"}
+{"level":"info","message":"Save result for user 1032230555@tcetmumbai.in: {\"_id\":\"6844745a904d02cdf7534c34\",\"name\":\"mira gupta\",\"phone\":\"8291586999\",\"email\":\"1032230555@tcetmumbai.in\",\"businessName\":\"coaching classes\",\"address\":\"704, ganga jamuna building\\nfashion factory mira road east\",\"role\":\"wholesaler\",\"status\":\"approved\",\"documents\":{\"aadhaar\":\"6844745a904d02cdf7534c34_aadhaar_VIVEK_LALLAN_GUPTA_domicile.pdf\",\"pan\":\"6844745a904d02cdf7534c34_pan_SelfDeclaration.pdf\",\"gst\":\"6844745a904d02cdf7534c34_gst_in.gov.abc-ABCID-728558255807.pdf\",\"drugLicense\":\"6844745a904d02cdf7534c34_drugLicense_Vivek_-_latest_resume.pdf\"},\"createdAt\":\"2025-06-07T17:18:18.510Z\",\"updatedAt\":\"2025-06-07T17:40:29.642Z\",\"__v\":0,\"password\":\"$2b$10$AF8eWp7//Tc8tZKhmPpWu.CTk.Gq5w1rdfaCuUCMoNLo7SNQmu0Za\"}","timestamp":"2025-06-07T17:40:30.054Z"}
+{"level":"info","message":"Stored password hash after save for 1032230555@tcetmumbai.in: $2b$10$AF8eWp7//Tc8tZKhmPpWu.CTk.Gq5w1rdfaCuUCMoNLo7SNQmu0Za","timestamp":"2025-06-07T17:40:30.290Z"}
+{"level":"info","message":"Password reset for user: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T17:40:30.332Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:42:04.833Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:42:04.843Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:42:05.871Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:42:05.876Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:42:47.392Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:42:47.400Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:42:48.272Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:42:49.083Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:43:34.378Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:43:34.388Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:43:59.627Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:43:59.641Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:44:00.250Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:44:00.924Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:53:36.133Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:53:36.150Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:53:37.169Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:53:37.211Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:55:25.944Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:55:25.953Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:55:26.629Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:55:26.680Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:55:54.457Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:55:54.468Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:55:55.884Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:55:55.899Z"}
+{"level":"info","message":"OTP sent to 1032230555@tcetmumbai.in for password_reset","timestamp":"2025-06-07T17:56:06.386Z"}
+{"level":"info","message":"New password hash for 1032230555@tcetmumbai.in: $2b$10$b6CUP1W1u/P.ntgVvoi0P.QfRS3Ual1Lpv2tc97jzZ5QyWgAZ36u2","timestamp":"2025-06-07T17:56:37.655Z"}
+{"level":"info","message":"Save result for user 1032230555@tcetmumbai.in: {\"_id\":\"6844745a904d02cdf7534c34\",\"name\":\"mira gupta\",\"phone\":\"8291586999\",\"email\":\"1032230555@tcetmumbai.in\",\"businessName\":\"coaching classes\",\"address\":\"704, ganga jamuna building\\nfashion factory mira road east\",\"role\":\"wholesaler\",\"status\":\"approved\",\"documents\":{\"aadhaar\":\"6844745a904d02cdf7534c34_aadhaar_VIVEK_LALLAN_GUPTA_domicile.pdf\",\"pan\":\"6844745a904d02cdf7534c34_pan_SelfDeclaration.pdf\",\"gst\":\"6844745a904d02cdf7534c34_gst_in.gov.abc-ABCID-728558255807.pdf\",\"drugLicense\":\"6844745a904d02cdf7534c34_drugLicense_Vivek_-_latest_resume.pdf\"},\"createdAt\":\"2025-06-07T17:18:18.510Z\",\"updatedAt\":\"2025-06-07T17:56:37.658Z\",\"__v\":0,\"password\":\"$2b$10$b6CUP1W1u/P.ntgVvoi0P.QfRS3Ual1Lpv2tc97jzZ5QyWgAZ36u2\"}","timestamp":"2025-06-07T17:56:37.681Z"}
+{"level":"info","message":"Stored password hash after save for 1032230555@tcetmumbai.in: $2b$10$b6CUP1W1u/P.ntgVvoi0P.QfRS3Ual1Lpv2tc97jzZ5QyWgAZ36u2","timestamp":"2025-06-07T17:56:37.927Z"}
+{"level":"info","message":"Password reset for user: 1032230555@tcetmumbai.in","timestamp":"2025-06-07T17:56:38.173Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-07T17:57:23.887Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-07T17:57:23.901Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-07T17:57:24.361Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-07T17:57:25.068Z"}
+{"level":"info","message":"User found: 1032230555@tcetmumbai.in, status: approved","timestamp":"2025-06-07T17:57:35.509Z"}
+{"level":"info","message":"User logged in: 8291586999","timestamp":"2025-06-07T17:57:35.674Z"}
+{"kind":"ObjectId","level":"error","message":"Get medicines error: Cast to ObjectId failed for value \"Unknown\" (type string) at path \"manufacturerId\" for model \"Product\"","path":"manufacturerId","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"Unknown\" (type string) at path \"manufacturerId\" for model \"Product\"\n    at SchemaObjectId.cast (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n    at SchemaObjectId.SchemaType.applySetters (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaObjectId.SchemaType.castForQuery (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at model.Query.Query.cast (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\query.js:5055:12)\n    at model.Query.Query._castConditions (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\query.js:2351:10)\n    at model.Query._find (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\query.js:2378:8)\n    at model.Query.exec (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\query.js:4604:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)","stringValue":"\"Unknown\"","timestamp":"2025-06-07T17:58:01.630Z","value":"Unknown","valueType":"string"}
