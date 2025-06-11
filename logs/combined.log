@@ -407,3 +407,14 @@
 {"level":"info","message":"User found: 1032230555@tcetmumbai.in, status: approved","timestamp":"2025-06-07T17:57:35.509Z"}
 {"level":"info","message":"User logged in: 8291586999","timestamp":"2025-06-07T17:57:35.674Z"}
 {"kind":"ObjectId","level":"error","message":"Get medicines error: Cast to ObjectId failed for value \"Unknown\" (type string) at path \"manufacturerId\" for model \"Product\"","path":"manufacturerId","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"Unknown\" (type string) at path \"manufacturerId\" for model \"Product\"\n    at SchemaObjectId.cast (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n    at SchemaObjectId.SchemaType.applySetters (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaObjectId.SchemaType.castForQuery (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at model.Query.Query.cast (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\query.js:5055:12)\n    at model.Query.Query._castConditions (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\query.js:2351:10)\n    at model.Query._find (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\query.js:2378:8)\n    at model.Query.exec (C:\\pharmaChain\\pharmachain-backend\\node_modules\\mongoose\\lib\\query.js:4604:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)","stringValue":"\"Unknown\"","timestamp":"2025-06-07T17:58:01.630Z","value":"Unknown","valueType":"string"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-11T17:15:05.433Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-11T17:15:05.443Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-11T17:15:06.579Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-11T17:15:07.172Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-11T17:16:47.526Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-11T17:16:47.538Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-11T17:16:47.956Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-11T17:16:48.838Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-11T17:20:00.859Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-11T17:20:00.872Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-11T17:20:05.756Z"}
