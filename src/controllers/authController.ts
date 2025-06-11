@@ -4,9 +4,15 @@ import { OTP } from '../models/OTP';
 import { logger } from '../config/logger';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { promises as fs } from 'fs';
-import path from 'path';
 import nodemailer from 'nodemailer';
+import { v2 as cloudinary } from 'cloudinary';
+
+// Configure Cloudinary
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -347,22 +353,35 @@ export const uploadDocs = async (req: Request, res: Response): Promise<void> => 
       return;
     }
 
-    const uploadDir = path.join(__dirname, '../../Uploads');
-    await fs.mkdir(uploadDir, { recursive: true });
-
     const documentPaths: Record<string, string> = {};
     for (const [docType, fileArray] of Object.entries(files)) {
       const file = fileArray[0];
       const fileName = `${userId}_${docType}_${file.originalname.replace(/\s/g, '_')}`;
-      const filePath = path.join(uploadDir, fileName);
-      await fs.writeFile(filePath, file.buffer);
-      documentPaths[docType] = fileName;
+
+      // Upload the document to Cloudinary
+      const result = await new Promise<{ secure_url: string }>((resolve, reject) => {
+        cloudinary.uploader.upload_stream(
+          { folder: 'pharmachain/documents', resource_type: 'auto', public_id: fileName },
+          (error, result) => {
+            if (error) {
+              logger.error('Cloudinary upload error:', error);
+              reject(new Error('Failed to upload document to Cloudinary'));
+            } else if (result) {
+              resolve(result);
+            } else {
+              reject(new Error('Cloudinary upload returned no result'));
+            }
+          }
+        ).end(file.buffer);
+      });
+
+      documentPaths[docType] = result.secure_url;
     }
 
     user.documents = documentPaths;
     await user.save();
     logger.info(`Documents uploaded for user ${userId}`);
-    res.status(200).json({ message: 'Documents uploaded successfully' });
+    res.status(200).json({ message: 'Documents uploaded successfully', documentPaths });
   } catch (error) {
     logger.error('Document upload error:', error);
     res.status(500).json({ message: 'Document upload failed' });

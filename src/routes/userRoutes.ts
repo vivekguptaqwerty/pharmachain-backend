@@ -19,24 +19,15 @@ import {
 } from '../controllers/userController';
 import { authenticateUser, restrictToRole } from '../middleware/auth';
 import multer from 'multer';
-import path from 'path';
 
 const router = express.Router();
 
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'src/Uploads/');
-  },
-  filename: (req, file, cb) => {
-    cb(null, `${Date.now()}-${file.originalname}`);
-  },
-});
-
+// Configure multer to store files in memory
 const upload = multer({
-  storage,
+  storage: multer.memoryStorage(),
   fileFilter: (req, file, cb) => {
     const filetypes = /jpeg|jpg|png|pdf/;
-    const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+    const extname = filetypes.test(file.originalname.toLowerCase().split('.').pop() || '');
     const mimetype = filetypes.test(file.mimetype);
     if (extname && mimetype) {
       cb(null, true);
@@ -45,7 +36,6 @@ const upload = multer({
     }
   },
 });
-
 
 router.use(authenticateUser);
 router.use(restrictToRole(['manufacturer', 'wholesaler', 'distributor']));

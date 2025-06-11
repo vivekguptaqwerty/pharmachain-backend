@@ -4,12 +4,10 @@ import helmet from 'helmet';
 import { connectDB } from './config/database';
 import authRoutes from './routes/authRoutes';
 import adminRoutes from './routes/adminRoutes';
+import userRoutes from './routes/userRoutes';
 import { errorHandler } from './middleware/errorHandler';
 import { logger } from './config/logger';
 import dotenv from 'dotenv';
-import path from 'path';
-import userRoutes from './routes/userRoutes';
-
 
 dotenv.config();
 
@@ -21,9 +19,6 @@ app.use(cors());
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-// Serve static files from src/Uploads directory
-app.use('/uploads', express.static(path.join(__dirname, '../../Uploads')));
 
 // Routes
 app.use('/api/auth', authRoutes);

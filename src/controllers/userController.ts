@@ -5,17 +5,23 @@ import { User } from '../models/User';
 import { logger } from '../config/logger';
 import bcrypt from 'bcryptjs';
 import mongoose from 'mongoose';
-import path from 'path';
-import * as fs from 'fs';
-import multer from 'multer';
 import Razorpay from 'razorpay';
 import crypto from 'crypto';
 import nodemailer from 'nodemailer';
 import PDFDocument from 'pdfkit';
+import { v2 as cloudinary } from 'cloudinary';
+import fs from 'fs';
 
 interface AuthRequest extends Request {
   user?: { userId: string; role: string };
 }
+
+// Configure Cloudinary
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 const razorpay = new Razorpay({
   key_id: process.env.RAZORPAY_KEY_ID || 'rzp_test_placeholder',
@@ -33,7 +39,7 @@ const transporter = nodemailer.createTransport({
 
 const sendOrderEmails = async (order: any, buyer: any, seller: any) => {
   const doc = new PDFDocument();
-  const invoicePath = path.join(__dirname, '..', 'Uploads', `invoice_${order.orderId}.pdf`);
+  const invoicePath = `/tmp/invoice_${order.orderId}.pdf`; // Use /tmp for temporary storage on Railway
   const stream = fs.createWriteStream(invoicePath);
   doc.pipe(stream);
 
@@ -86,6 +92,9 @@ const sendOrderEmails = async (order: any, buyer: any, seller: any) => {
       false
     )
   );
+
+  // Clean up the temporary file
+  await fs.promises.unlink(invoicePath);
 };
 
 export const getDashboard = async (req: AuthRequest, res: Response): Promise<void> => {
@@ -137,7 +146,7 @@ export const getDashboard = async (req: AuthRequest, res: Response): Promise<voi
 
 export const addProduct = async (req: AuthRequest, res: Response): Promise<void> => {
   const { productName, batchNumber, expiryDate, price, minQuantity, quantity, category, description, manufacturer } = req.body;
-  const file = req.file; // Use req.file directly
+  const file = req.file; // File is now in memory as a buffer
   const user = req.user;
 
   if (!user?.userId || !user?.role) {
@@ -175,9 +184,25 @@ export const addProduct = async (req: AuthRequest, res: Response): Promise<void>
       manufacturerId = manufacturerUser._id as mongoose.Types.ObjectId;
     }
 
-    let imagePath: string | undefined;
+    let imageUrl: string | undefined;
     if (file) {
-      imagePath = `/Uploads/${file.filename}`;
+      // Upload the image to Cloudinary using a Promise wrapper
+      const uploadResult: any = await new Promise((resolve, reject) => {
+        const uploadStream = cloudinary.uploader.upload_stream(
+          { folder: 'pharmachain/products', resource_type: 'image' },
+          (error, result) => {
+            if (error) {
+              logger.error('Cloudinary upload error:', error);
+              reject(new Error('Failed to upload image to Cloudinary'));
+            } else {
+              resolve(result);
+            }
+          }
+        );
+        uploadStream.end(file.buffer);
+      });
+
+      imageUrl = uploadResult.secure_url;
     }
 
     const product = new Product({
@@ -189,7 +214,7 @@ export const addProduct = async (req: AuthRequest, res: Response): Promise<void>
       minQuantity: parsedMinQuantity,
       category,
       description,
-      image: imagePath,
+      image: imageUrl,
       userId,
       role,
       manufacturerId,
@@ -267,6 +292,7 @@ export const updateProduct = async (req: AuthRequest, res: Response): Promise<vo
       description,
       manufacturer,
     } = req.body;
+    const file = req.file; // File is now in memory as a buffer
 
     const product = await Product.findOne({ _id: productId, userId });
     if (!product) {
@@ -297,14 +323,31 @@ export const updateProduct = async (req: AuthRequest, res: Response): Promise<vo
       description: description !== undefined ? description : product.description,
     };
 
-    if (req.file) {
+    if (file) {
+      // Delete the old image from Cloudinary if it exists
       if (product.image) {
-        const oldImagePath = path.join(__dirname, '..', 'Uploads', product.image.replace('/Uploads/', ''));
-        if (fs.existsSync(oldImagePath)) {
-          fs.unlinkSync(oldImagePath);
+        const publicId = product.image.split('/').pop()?.split('.')[0];
+        if (publicId) {
+          await cloudinary.uploader.destroy(`pharmachain/products/${publicId}`);
         }
       }
-      updateData.image = `/Uploads/${req.file.filename}`;
+      // Upload the new image to Cloudinary using a Promise wrapper
+      const uploadResult: any = await new Promise((resolve, reject) => {
+        const uploadStream = cloudinary.uploader.upload_stream(
+          { folder: 'pharmachain/products', resource_type: 'image' },
+          (error, result) => {
+            if (error) {
+              logger.error('Cloudinary upload error:', error);
+              reject(new Error('Failed to upload image to Cloudinary'));
+            } else {
+              resolve(result);
+            }
+          }
+        );
+        uploadStream.end(file.buffer);
+      });
+
+      updateData.image = uploadResult.secure_url;
     }
 
     if (manufacturer && req.user?.role !== 'manufacturer') {
@@ -339,10 +382,11 @@ export const deleteProduct = async (req: AuthRequest, res: Response): Promise<vo
       return;
     }
 
+    // Delete the image from Cloudinary if it exists
     if (product.image) {
-      const imagePath = path.join(__dirname, '..', 'Uploads', product.image.replace('/Uploads/', ''));
-      if (fs.existsSync(imagePath)) {
-        fs.unlinkSync(imagePath);
+      const publicId = product.image.split('/').pop()?.split('.')[0];
+      if (publicId) {
+        await cloudinary.uploader.destroy(`pharmachain/products/${publicId}`);
       }
     }
 
@@ -525,16 +569,28 @@ export const updateDocuments = async (req: AuthRequest, res: Response): Promise<
       return;
     }
 
-    const uploadDir = path.join(__dirname, '../Uploads');
-    await fs.promises.mkdir(uploadDir, { recursive: true });
-
     const documentPaths: Record<string, string> = { ...user.documents };
     for (const [docType, fileArray] of Object.entries(files)) {
       const file = fileArray[0];
       const fileName = `${userId}_${docType}_${Date.now()}_${file.originalname.replace(/\s/g, '_')}`;
-      const filePath = path.join(uploadDir, fileName);
-      await fs.promises.writeFile(filePath, file.buffer);
-      documentPaths[docType] = fileName;
+
+      // Upload the document to Cloudinary using a Promise wrapper
+      const result: any = await new Promise((resolve, reject) => {
+        const uploadStream = cloudinary.uploader.upload_stream(
+          { folder: 'pharmachain/documents', resource_type: 'auto' },
+          (error, result) => {
+            if (error) {
+              logger.error('Cloudinary upload error:', error);
+              reject(new Error('Failed to upload document to Cloudinary'));
+            } else {
+              resolve(result);
+            }
+          }
+        );
+        uploadStream.end(file.buffer);
+      });
+
+      documentPaths[docType] = result.secure_url;
     }
 
     user.documents = documentPaths;
@@ -789,7 +845,7 @@ export const verifyPayment = async (req: AuthRequest, res: Response): Promise<vo
       await sendOrderEmails(order, buyer, seller);
     }
 
-    res.status(200).json({ order, message: 'Payment verified and order confirmed' });
+    res.status(200).json({ message: 'Payment verified and order confirmed', order });
   } catch (error) {
     logger.error('Verify payment error:', error);
     res.status(500).json({ message: 'Server error' });
