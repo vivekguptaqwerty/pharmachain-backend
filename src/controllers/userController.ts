@@ -147,6 +147,10 @@ export const addProduct = async (req: AuthRequest, res: Response): Promise<void>
   const { userId, role } = user;
 
   try {
+    console.log("BODY:", req.body);
+console.log("FILE:", req.file);
+console.log("USER:", req.user);
+
     // Validate required fields
     if (!productName || !batchNumber || !expiryDate || !price || !minQuantity || !category) {
       res.status(400).json({ message: 'All required fields must be provided' });
