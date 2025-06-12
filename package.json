@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
-    "dev": "nodemon src/index.ts"
+    "dev": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +29,7 @@
     "pdfkit": "^0.17.1",
     "pharmachain-backend": "file:",
     "razorpay": "^2.9.6",
+    "streamifier": "^0.1.1",
     "winston": "^3.17.0"
   },
   "devDependencies": {
@@ -39,6 +40,7 @@
     "@types/node": "^22.15.29",
     "@types/nodemailer": "^6.4.17",
     "@types/pdfkit": "^0.13.9",
+    "@types/streamifier": "^0.1.2",
     "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"

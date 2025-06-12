@@ -11,6 +11,24 @@ import nodemailer from 'nodemailer';
 import PDFDocument from 'pdfkit';
 import { v2 as cloudinary } from 'cloudinary';
 import fs from 'fs';
+import streamifier from 'streamifier';
+
+const uploadFromBuffer = (fileBuffer: Buffer) => {
+  return new Promise((resolve, reject) => {
+    const stream = cloudinary.uploader.upload_stream(
+      { folder: 'products' },
+      (error, result) => {
+        if (result) {
+          resolve(result);
+        } else {
+          reject(error);
+        }
+      }
+    );
+    streamifier.createReadStream(fileBuffer).pipe(stream);
+  });
+};
+
 
 interface AuthRequest extends Request {
   user?: { userId: string; role: string };
@@ -184,26 +202,12 @@ export const addProduct = async (req: AuthRequest, res: Response): Promise<void>
       manufacturerId = manufacturerUser._id as mongoose.Types.ObjectId;
     }
 
-    let imageUrl: string | undefined;
+    let imagePath: string | undefined;
     if (file) {
-      // Upload the image to Cloudinary using a Promise wrapper
-      const uploadResult: any = await new Promise((resolve, reject) => {
-        const uploadStream = cloudinary.uploader.upload_stream(
-          { folder: 'pharmachain/products', resource_type: 'image' },
-          (error, result) => {
-            if (error) {
-              logger.error('Cloudinary upload error:', error);
-              reject(new Error('Failed to upload image to Cloudinary'));
-            } else {
-              resolve(result);
-            }
-          }
-        );
-        uploadStream.end(file.buffer);
-      });
-
-      imageUrl = uploadResult.secure_url;
+      const result: any = await uploadFromBuffer(file.buffer);
+      imagePath = result.secure_url;
     }
+
 
     const product = new Product({
       name: productName,
@@ -214,7 +218,7 @@ export const addProduct = async (req: AuthRequest, res: Response): Promise<void>
       minQuantity: parsedMinQuantity,
       category,
       description,
-      image: imageUrl,
+      image: imagePath,
       userId,
       role,
       manufacturerId,
