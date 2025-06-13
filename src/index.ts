@@ -8,6 +8,8 @@ import userRoutes from './routes/userRoutes';
 import { errorHandler } from './middleware/errorHandler';
 import { logger } from './config/logger';
 import dotenv from 'dotenv';
+import testCloudinaryRoute from './routes/testRoutes';
+
 
 dotenv.config();
 
@@ -24,6 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api', testCloudinaryRoute);
 
 // Error Handler
 app.use(errorHandler);

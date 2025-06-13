@@ -418,3 +418,27 @@
 {"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-11T17:20:00.859Z"}
 {"level":"info","message":"Server running on port 5000","timestamp":"2025-06-11T17:20:00.872Z"}
 {"level":"info","message":"SMTP server ready","timestamp":"2025-06-11T17:20:05.756Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-13T16:07:38.715Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-13T16:07:39.509Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-13T16:07:39.992Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-13T16:07:40.003Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-13T16:11:28.247Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-13T16:11:28.260Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-13T16:11:29.149Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-13T16:11:29.434Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-13T16:15:38.996Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-13T16:15:39.008Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-13T16:15:39.910Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-13T16:15:39.921Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-13T16:18:16.185Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-13T16:18:16.195Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-13T16:18:16.821Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-13T16:18:17.062Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-13T16:18:35.169Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-13T16:18:35.177Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-13T16:18:36.181Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-13T16:18:36.976Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2025-06-13T16:18:50.292Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-06-13T16:18:50.301Z"}
+{"level":"info","message":"SMTP server ready","timestamp":"2025-06-13T16:18:51.374Z"}
+{"level":"info","message":"Nodemailer configured successfully","timestamp":"2025-06-13T16:18:51.375Z"}

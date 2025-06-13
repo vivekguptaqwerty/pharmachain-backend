@@ -36,9 +36,9 @@ interface AuthRequest extends Request {
 
 // Configure Cloudinary
 cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET,
+  cloud_name: "dv4t91vmd",
+  api_key: "278886589745232",
+  api_secret: "G5HBrVx1HHOfazeF27rfP3a8Qqw",
 });
 
 const razorpay = new Razorpay({
