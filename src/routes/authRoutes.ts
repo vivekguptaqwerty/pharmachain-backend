@@ -21,7 +21,8 @@ import multer from 'multer';
 import rateLimit from 'express-rate-limit';
 
 const router = Router();
-const upload = multer({ storage: multer.memoryStorage() });
+const storage = multer.memoryStorage(); // instead of diskStorage
+const upload = multer({ storage });
 
 const otpLimiter = rateLimit({
   windowMs: 5 * 60 * 1000, // 5 minutes
