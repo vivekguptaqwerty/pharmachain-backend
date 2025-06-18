@@ -164,7 +164,7 @@ export const getDashboard = async (req: AuthRequest, res: Response): Promise<voi
 
 export const addProduct = async (req: AuthRequest, res: Response): Promise<void> => {
   const { productName, batchNumber, expiryDate, price, minQuantity, quantity, category, description, manufacturer } = req.body;
-  const file = req.file; // File is now in memory as a buffer
+  const file = req.file;
   const user = req.user;
 
   if (!user?.userId || !user?.role) {
@@ -174,13 +174,11 @@ export const addProduct = async (req: AuthRequest, res: Response): Promise<void>
   const { userId, role } = user;
 
   try {
-    // Validate required fields
     if (!productName || !batchNumber || !expiryDate || !price || !minQuantity || !category) {
       res.status(400).json({ message: 'All required fields must be provided' });
       return;
     }
 
-    // Validate minQuantity and quantity
     const parsedMinQuantity = parseInt(minQuantity);
     const parsedQuantity = parseInt(quantity);
     if (isNaN(parsedMinQuantity) || parsedMinQuantity < 1) {
@@ -192,7 +190,7 @@ export const addProduct = async (req: AuthRequest, res: Response): Promise<void>
       return;
     }
 
-    let manufacturerId: mongoose.Types.ObjectId | undefined;
+    let manufacturerId: mongoose.Types.ObjectId | undefined = undefined;
     if (role !== 'manufacturer' && manufacturer) {
       const manufacturerUser = await User.findOne({ _id: manufacturer, role: 'manufacturer' });
       if (!manufacturerUser) {
@@ -200,6 +198,8 @@ export const addProduct = async (req: AuthRequest, res: Response): Promise<void>
         return;
       }
       manufacturerId = manufacturerUser._id as mongoose.Types.ObjectId;
+    } else if (role === 'manufacturer') {
+      manufacturerId = new mongoose.Types.ObjectId(userId); // Default to userId for manufacturers
     }
 
     let imagePath: string | undefined;
@@ -207,7 +207,6 @@ export const addProduct = async (req: AuthRequest, res: Response): Promise<void>
       const result: any = await uploadFromBuffer(file.buffer);
       imagePath = result.secure_url;
     }
-
 
     const product = new Product({
       name: productName,
@@ -660,46 +659,71 @@ export const getMedicines = async (req: AuthRequest, res: Response): Promise<voi
 
     const query: any = {
       quantity: { $gt: 0 },
-      $or: [
+    };
+
+    if (search) {
+      query.$or = [
         { name: { $regex: search, $options: 'i' } },
         { batchNumber: { $regex: search, $options: 'i' } },
-      ],
-    };
+      ];
+      const manufacturers = await User.find({
+        businessName: { $regex: search, $options: 'i' },
+        role: 'manufacturer',
+      }).select('_id');
+      if (manufacturers.length > 0) {
+        query.$or.push({ manufacturerId: { $in: manufacturers.map(m => m._id) } });
+      } else {
+        console.log('No manufacturers found for search term:', search);
+      }
+    }
 
     if (manufacturer) query.manufacturerId = manufacturer;
     if (category) query.category = category;
 
     if (role === 'wholesaler') {
-      query.role = 'manufacturer';
+      query.userId = { $in: await Product.distinct('userId', { userId: { $ne: userId } }) };
     } else if (role === 'distributor') {
-      query.role = { $in: ['manufacturer', 'wholesaler'] };
+      query.userId = { $in: await Product.distinct('userId', { userId: { $ne: userId } }) };
     } else {
       res.status(403).json({ message: 'Invalid role' });
       return;
     }
 
-    const [medicines, total] = await Promise.all([
-      Product.find(query)
-        .populate('manufacturerId', 'businessName')
-        .skip(skip)
-        .limit(limitNum)
-        .lean(),
-      Product.countDocuments(query),
-    ]);
+    console.log('Search query:', query); // Debug log
+
+    const medicines = await Product.find(query)
+      .populate({
+        path: 'manufacturerId',
+        select: 'businessName',
+        match: { role: 'manufacturer' }, // Ensure only manufacturers are populated
+      })
+      .skip(skip)
+      .limit(limitNum)
+      .lean();
+
+    const total = await Product.countDocuments(query);
+
+    if (medicines.some(m => !m.manufacturerId || (typeof m.manufacturerId === 'object' && !('businessName' in m.manufacturerId)))) {
+      console.warn('Some medicines have missing or unpopulated manufacturerId:', medicines.filter(m => !m.manufacturerId || (typeof m.manufacturerId === 'object' && !('businessName' in m.manufacturerId))));
+    }
+
+    console.log('Medicines found:', medicines); // Debug log
 
     res.status(200).json({
       medicines: medicines.map((m) => ({
         id: m._id,
         name: m.name,
-        manufacturer: typeof m.manufacturerId === 'object' && m.manufacturerId !== null && 'businessName' in m.manufacturerId
+        manufacturer: (m.manufacturerId && typeof m.manufacturerId === 'object' && 'businessName' in m.manufacturerId)
           ? (m.manufacturerId as any).businessName
-          : 'Unknown',
+          : 'Manufacturer not available',
         price: m.price,
         stock: m.quantity,
         minQuantity: m.minQuantity,
         expiry: m.expiryDate.toISOString().split('T')[0],
         category: m.category,
         type: m.category.toLowerCase(),
+        image: m.image || '',
+        description: m.description || '',
       })),
       total,
     });
@@ -925,6 +949,37 @@ export const trackOrder = async (req: AuthRequest, res: Response): Promise<void>
     });
   } catch (error) {
     logger.error('Track order error:', error);
+    res.status(500).json({ message: 'Server error' });
+  }
+};
+
+export const getManufacturers = async (req: AuthRequest, res: Response): Promise<void> => {
+  try {
+    const userId = req.user?.userId;
+    const role = req.user?.role;
+
+    if (!userId || !role) {
+      res.status(401).json({ message: 'Unauthorized' });
+      return;
+    }
+
+    if (!['wholesaler', 'distributor'].includes(role)) {
+      res.status(403).json({ message: 'Invalid role' });
+      return;
+    }
+
+    const manufacturers = await User.find({ role: 'manufacturer' })
+      .select('businessName _id')
+      .lean();
+
+    res.status(200).json({
+      manufacturers: manufacturers.map((m) => ({
+        id: m._id,
+        businessName: m.businessName || 'Unknown',
+      })),
+    });
+  } catch (error) {
+    logger.error('Get manufacturers error:', error);
     res.status(500).json({ message: 'Server error' });
   }
 };

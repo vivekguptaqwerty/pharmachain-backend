@@ -12,7 +12,7 @@ interface IProduct extends Document {
   image?: string;
   userId: mongoose.Types.ObjectId;
   role: string;
-  manufacturerId?: mongoose.Types.ObjectId;
+  manufacturerId?: mongoose.Types.ObjectId; // Optional field for manufacturer
   createdAt: Date;
   updatedAt: Date;
 }
@@ -34,7 +34,9 @@ const productSchema = new Schema<IProduct>(
     image: { type: String },
     userId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     role: { type: String, enum: ['manufacturer', 'wholesaler', 'distributor'], required: true },
-    manufacturerId: { type: Schema.Types.ObjectId, ref: 'User' },
+    manufacturerId: { type: Schema.Types.ObjectId, ref: 'User', default: function(this: IProduct) {
+      return this.role === 'manufacturer' ? this.userId : undefined;
+    } },
   },
   { timestamps: true }
 );

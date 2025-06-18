@@ -16,6 +16,7 @@ import {
   verifyPayment,
   getPlacedOrders,
   trackOrder,
+  getManufacturers,
 } from '../controllers/userController';
 import { authenticateUser, restrictToRole } from '../middleware/auth';
 import multer from 'multer';
@@ -49,6 +50,7 @@ router.get('/orders', getOrders);
 router.put('/orders/:orderId', updateOrderStatus);
 router.get('/profile', getProfile);
 router.put('/profile', updateProfile);
+router.get('/manufacturers', getManufacturers);
 router.post(
   '/documents',
   upload.fields([
